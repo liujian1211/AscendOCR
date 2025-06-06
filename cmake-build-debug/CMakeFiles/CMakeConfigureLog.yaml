@@ -1,0 +1,518 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The system is: Linux - 6.8.0-59-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JA27ap"
+      binary: "/home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JA27ap"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JA27ap'
+        
+        Run Build Command(s): /home/chenqiang/software/clion-2024.2.3/bin/ninja/linux/x64/ninja -v cmTC_148d3
+        [1/2] /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-gcc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o -c /home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-gcc
+        Target: aarch64-target-linux-gnu
+        Configured with: /usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/hcc_arm64le_build_src/gcc/configure --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-target-linux-gnu --with-arch=armv8-a --prefix=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --disable-multilib --enable-__cxa_atexit --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-libgomp --enable-libssp --enable-threads --enable-plugin --enable-c99 --enable-long-long --disable-nls --enable-shared --enable-poison-system-directories --enable-symvers=gnu --with-pkgversion='Do-Compiler V100R001C15B001' --enable-languages=c,c++ --with-headers=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot/usr/include --with-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-build-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-gmp=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpfr=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpc=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-build-time-tools=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/aarch64-target-linux-gnu/bin --libdir=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/lib64 --disable-libcilkrts --with-system-zlib --without-isl
+        Thread model: posix
+        gcc version 7.3.0 (Do-Compiler V100R001C15B001) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/cc1 -quiet -v -iprefix /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/ -isysroot /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot /home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=armv8-a -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o -version -fdiagnostics-color=always -o /tmp/cc5FGeaC.s
+        GNU C11 (Do-Compiler V100R001C15B001) version 7.3.0 (aarch64-target-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include"
+        ignoring nonexistent directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/local/include"
+        ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed"
+        ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/include
+        End of search list.
+        GNU C11 (Do-Compiler V100R001C15B001) version 7.3.0 (aarch64-target-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 4f11bbd8da55d377e6ece4d755cf4b7e
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/as -v -EL -march=armv8-a -mabi=lp64 -o CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o /tmp/cc5FGeaC.s
+        GNU assembler version 2.38 (aarch64-target-linux-gnu) using BFD version (Do-Compiler V100R001C15B001) 2.38
+        COMPILER_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/
+        LIBRARY_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+        [2/2] : && /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-gcc  -v -Wl,-v CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o -o cmTC_148d3   && :
+        Using built-in specs.
+        COLLECT_GCC=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-gcc
+        COLLECT_LTO_WRAPPER=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/lto-wrapper
+        Target: aarch64-target-linux-gnu
+        Configured with: /usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/hcc_arm64le_build_src/gcc/configure --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-target-linux-gnu --with-arch=armv8-a --prefix=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --disable-multilib --enable-__cxa_atexit --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-libgomp --enable-libssp --enable-threads --enable-plugin --enable-c99 --enable-long-long --disable-nls --enable-shared --enable-poison-system-directories --enable-symvers=gnu --with-pkgversion='Do-Compiler V100R001C15B001' --enable-languages=c,c++ --with-headers=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot/usr/include --with-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-build-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-gmp=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpfr=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpc=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-build-time-tools=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/aarch64-target-linux-gnu/bin --libdir=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/lib64 --disable-libcilkrts --with-system-zlib --without-isl
+        Thread model: posix
+        gcc version 7.3.0 (Do-Compiler V100R001C15B001) 
+        COMPILER_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/
+        LIBRARY_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_148d3' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/collect2 -plugin /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpQaBlj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot --eh-frame-hdr -dynamic-linker /lib64/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_148d3 /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crt1.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crti.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64 -v CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crtn.o
+        collect2 version 7.3.0
+        /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/ld -plugin /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpQaBlj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot --eh-frame-hdr -dynamic-linker /lib64/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_148d3 /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crt1.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crti.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64 -v CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crtn.o
+        GNU ld (Do-Compiler V100R001C15B001) 2.38
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_148d3' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:137 (message)"
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include]
+          add: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed]
+          add: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include]
+          add: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/include]
+        collapse include dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed]
+        collapse include dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/include]
+        collapse include dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/include] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/include]
+        implicit include dirs: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/include;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/include;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JA27ap']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/chenqiang/software/clion-2024.2.3/bin/ninja/linux/x64/ninja -v cmTC_148d3]
+        ignore line: [[1/2] /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-gcc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o -c /home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-gcc]
+        ignore line: [Target: aarch64-target-linux-gnu]
+        ignore line: [Configured with: /usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/hcc_arm64le_build_src/gcc/configure --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-target-linux-gnu --with-arch=armv8-a --prefix=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --disable-multilib --enable-__cxa_atexit --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-libgomp --enable-libssp --enable-threads --enable-plugin --enable-c99 --enable-long-long --disable-nls --enable-shared --enable-poison-system-directories --enable-symvers=gnu --with-pkgversion='Do-Compiler V100R001C15B001' --enable-languages=c,c++ --with-headers=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot/usr/include --with-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-build-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-gmp=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpfr=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpc=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-build-time-tools=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/aarch64-target-linux-gnu/bin --libdir=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/lib64 --disable-libcilkrts --with-system-zlib --without-isl]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 7.3.0 (Do-Compiler V100R001C15B001) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/cc1 -quiet -v -iprefix /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/ -isysroot /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot /home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=armv8-a -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o -version -fdiagnostics-color=always -o /tmp/cc5FGeaC.s]
+        ignore line: [GNU C11 (Do-Compiler V100R001C15B001) version 7.3.0 (aarch64-target-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include]
+        ignore line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed]
+        ignore line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include]
+        ignore line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C11 (Do-Compiler V100R001C15B001) version 7.3.0 (aarch64-target-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 4f11bbd8da55d377e6ece4d755cf4b7e]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/as -v -EL -march=armv8-a -mabi=lp64 -o CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o /tmp/cc5FGeaC.s]
+        ignore line: [GNU assembler version 2.38 (aarch64-target-linux-gnu) using BFD version (Do-Compiler V100R001C15B001) 2.38]
+        ignore line: [COMPILER_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [[2/2] : && /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-gcc  -v -Wl -v CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o -o cmTC_148d3   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/lto-wrapper]
+        ignore line: [Target: aarch64-target-linux-gnu]
+        ignore line: [Configured with: /usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/hcc_arm64le_build_src/gcc/configure --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-target-linux-gnu --with-arch=armv8-a --prefix=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --disable-multilib --enable-__cxa_atexit --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-libgomp --enable-libssp --enable-threads --enable-plugin --enable-c99 --enable-long-long --disable-nls --enable-shared --enable-poison-system-directories --enable-symvers=gnu --with-pkgversion='Do-Compiler V100R001C15B001' --enable-languages=c,c++ --with-headers=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot/usr/include --with-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-build-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-gmp=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpfr=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpc=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-build-time-tools=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/aarch64-target-linux-gnu/bin --libdir=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/lib64 --disable-libcilkrts --with-system-zlib --without-isl]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 7.3.0 (Do-Compiler V100R001C15B001) ]
+        ignore line: [COMPILER_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_148d3' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        link line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/collect2 -plugin /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpQaBlj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot --eh-frame-hdr -dynamic-linker /lib64/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_148d3 /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crt1.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crti.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64 -v CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crtn.o]
+          arg [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccpQaBlj.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_148d3] ==> ignore
+          arg [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crt1.o] ==> obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crt1.o]
+          arg [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crti.o] ==> obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crti.o]
+          arg [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o] ==> obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o]
+          arg [-L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0] ==> dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0]
+          arg [-L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc] ==> dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc]
+          arg [-L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64] ==> dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64]
+          arg [-L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64] ==> dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64]
+          arg [-L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib] ==> dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib]
+          arg [-L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64] ==> dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o] ==> obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o]
+          arg [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crtn.o] ==> obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crtn.o]
+        ignore line: [collect2 version 7.3.0]
+        ignore line: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/ld -plugin /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpQaBlj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot --eh-frame-hdr -dynamic-linker /lib64/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_148d3 /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crt1.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crti.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64 -v CMakeFiles/cmTC_148d3.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crtn.o]
+        linker tool for 'C': /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/ld
+        collapse obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crt1.o] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64/crt1.o]
+        collapse obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crti.o] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64/crti.o]
+        collapse obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o]
+        collapse obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o]
+        collapse obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crtn.o] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64/crtn.o]
+        collapse library dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0]
+        collapse library dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc]
+        collapse library dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/lib64]
+        collapse library dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64]
+        collapse library dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/lib]
+        collapse library dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64/crt1.o;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64/crti.o;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64/crtn.o]
+        implicit dirs: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/lib64;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Running the C compiler's linker: "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/ld" "-v"
+      GNU ld (Do-Compiler V100R001C15B001) 2.38
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PXQz6a"
+      binary: "/home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PXQz6a"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PXQz6a'
+        
+        Run Build Command(s): /home/chenqiang/software/clion-2024.2.3/bin/ninja/linux/x64/ninja -v cmTC_bf578
+        [1/2] /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-g++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o -c /home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-g++
+        Target: aarch64-target-linux-gnu
+        Configured with: /usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/hcc_arm64le_build_src/gcc/configure --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-target-linux-gnu --with-arch=armv8-a --prefix=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --disable-multilib --enable-__cxa_atexit --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-libgomp --enable-libssp --enable-threads --enable-plugin --enable-c99 --enable-long-long --disable-nls --enable-shared --enable-poison-system-directories --enable-symvers=gnu --with-pkgversion='Do-Compiler V100R001C15B001' --enable-languages=c,c++ --with-headers=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot/usr/include --with-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-build-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-gmp=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpfr=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpc=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-build-time-tools=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/aarch64-target-linux-gnu/bin --libdir=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/lib64 --disable-libcilkrts --with-system-zlib --without-isl
+        Thread model: posix
+        gcc version 7.3.0 (Do-Compiler V100R001C15B001) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/cc1plus -quiet -v -iprefix /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/ -isysroot /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot -D_GNU_SOURCE /home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=armv8-a -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o -version -fdiagnostics-color=always -o /tmp/ccVvQiJ0.s
+        GNU C++14 (Do-Compiler V100R001C15B001) version 7.3.0 (aarch64-target-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0"
+        ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0/aarch64-target-linux-gnu"
+        ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0/backward"
+        ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include"
+        ignoring nonexistent directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/local/include"
+        ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed"
+        ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0/aarch64-target-linux-gnu
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0/backward
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/include
+        End of search list.
+        GNU C++14 (Do-Compiler V100R001C15B001) version 7.3.0 (aarch64-target-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 5833405e22d75b6db01c006ec63b842c
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/as -v -EL -march=armv8-a -mabi=lp64 -o CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccVvQiJ0.s
+        GNU assembler version 2.38 (aarch64-target-linux-gnu) using BFD version (Do-Compiler V100R001C15B001) 2.38
+        COMPILER_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/
+        LIBRARY_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+        [2/2] : && /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-g++  -v -Wl,-v CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_bf578   && :
+        Using built-in specs.
+        COLLECT_GCC=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-g++
+        COLLECT_LTO_WRAPPER=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/lto-wrapper
+        Target: aarch64-target-linux-gnu
+        Configured with: /usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/hcc_arm64le_build_src/gcc/configure --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-target-linux-gnu --with-arch=armv8-a --prefix=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --disable-multilib --enable-__cxa_atexit --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-libgomp --enable-libssp --enable-threads --enable-plugin --enable-c99 --enable-long-long --disable-nls --enable-shared --enable-poison-system-directories --enable-symvers=gnu --with-pkgversion='Do-Compiler V100R001C15B001' --enable-languages=c,c++ --with-headers=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot/usr/include --with-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-build-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-gmp=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpfr=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpc=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-build-time-tools=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/aarch64-target-linux-gnu/bin --libdir=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/lib64 --disable-libcilkrts --with-system-zlib --without-isl
+        Thread model: posix
+        gcc version 7.3.0 (Do-Compiler V100R001C15B001) 
+        COMPILER_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/
+        LIBRARY_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bf578' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+         /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/collect2 -plugin /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccX7Wyks.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot --eh-frame-hdr -dynamic-linker /lib64/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_bf578 /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crt1.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crti.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64 -v CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crtn.o
+        collect2 version 7.3.0
+        /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/ld -plugin /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccX7Wyks.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot --eh-frame-hdr -dynamic-linker /lib64/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_bf578 /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crt1.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crti.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64 -v CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crtn.o
+        GNU ld (Do-Compiler V100R001C15B001) 2.38
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bf578' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:137 (message)"
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0]
+          add: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0/aarch64-target-linux-gnu]
+          add: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0/backward]
+          add: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include]
+          add: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed]
+          add: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include]
+          add: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/include/c++/7.3.0]
+        collapse include dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0/aarch64-target-linux-gnu] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/include/c++/7.3.0/aarch64-target-linux-gnu]
+        collapse include dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0/backward] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/include/c++/7.3.0/backward]
+        collapse include dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/include]
+        collapse include dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed]
+        collapse include dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/include]
+        collapse include dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/include] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/include]
+        implicit include dirs: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/include/c++/7.3.0;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/include/c++/7.3.0/aarch64-target-linux-gnu;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/include/c++/7.3.0/backward;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/include;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/include;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PXQz6a']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/chenqiang/software/clion-2024.2.3/bin/ninja/linux/x64/ninja -v cmTC_bf578]
+        ignore line: [[1/2] /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-g++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o -c /home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-g++]
+        ignore line: [Target: aarch64-target-linux-gnu]
+        ignore line: [Configured with: /usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/hcc_arm64le_build_src/gcc/configure --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-target-linux-gnu --with-arch=armv8-a --prefix=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --disable-multilib --enable-__cxa_atexit --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-libgomp --enable-libssp --enable-threads --enable-plugin --enable-c99 --enable-long-long --disable-nls --enable-shared --enable-poison-system-directories --enable-symvers=gnu --with-pkgversion='Do-Compiler V100R001C15B001' --enable-languages=c,c++ --with-headers=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot/usr/include --with-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-build-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-gmp=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpfr=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpc=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-build-time-tools=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/aarch64-target-linux-gnu/bin --libdir=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/lib64 --disable-libcilkrts --with-system-zlib --without-isl]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 7.3.0 (Do-Compiler V100R001C15B001) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/cc1plus -quiet -v -iprefix /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/ -isysroot /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot -D_GNU_SOURCE /home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=armv8-a -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o -version -fdiagnostics-color=always -o /tmp/ccVvQiJ0.s]
+        ignore line: [GNU C++14 (Do-Compiler V100R001C15B001) version 7.3.0 (aarch64-target-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0"]
+        ignore line: [ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0/aarch64-target-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0/backward"]
+        ignore line: [ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/../../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0]
+        ignore line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0/aarch64-target-linux-gnu]
+        ignore line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include/c++/7.3.0/backward]
+        ignore line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include]
+        ignore line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed]
+        ignore line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/include]
+        ignore line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (Do-Compiler V100R001C15B001) version 7.3.0 (aarch64-target-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 5833405e22d75b6db01c006ec63b842c]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/as -v -EL -march=armv8-a -mabi=lp64 -o CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccVvQiJ0.s]
+        ignore line: [GNU assembler version 2.38 (aarch64-target-linux-gnu) using BFD version (Do-Compiler V100R001C15B001) 2.38]
+        ignore line: [COMPILER_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [[2/2] : && /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-g++  -v -Wl -v CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_bf578   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/lto-wrapper]
+        ignore line: [Target: aarch64-target-linux-gnu]
+        ignore line: [Configured with: /usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/hcc_arm64le_build_src/gcc/configure --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=aarch64-target-linux-gnu --with-arch=armv8-a --prefix=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --disable-multilib --enable-__cxa_atexit --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-libgomp --enable-libssp --enable-threads --enable-plugin --enable-c99 --enable-long-long --disable-nls --enable-shared --enable-poison-system-directories --enable-symvers=gnu --with-pkgversion='Do-Compiler V100R001C15B001' --enable-languages=c,c++ --with-headers=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot/usr/include --with-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-build-sysroot=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/sysroot --with-gmp=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpfr=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-mpc=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le --with-build-time-tools=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/aarch64-target-linux-gnu/bin --libdir=/usr1/turing/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le/lib64 --disable-libcilkrts --with-system-zlib --without-isl]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 7.3.0 (Do-Compiler V100R001C15B001) ]
+        ignore line: [COMPILER_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/:/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bf578' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        link line: [ /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/collect2 -plugin /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccX7Wyks.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot --eh-frame-hdr -dynamic-linker /lib64/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_bf578 /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crt1.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crti.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64 -v CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crtn.o]
+          arg [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccX7Wyks.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_bf578] ==> ignore
+          arg [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crt1.o] ==> obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crt1.o]
+          arg [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crti.o] ==> obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crti.o]
+          arg [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o] ==> obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o]
+          arg [-L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0] ==> dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0]
+          arg [-L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc] ==> dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc]
+          arg [-L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64] ==> dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64]
+          arg [-L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64] ==> dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64]
+          arg [-L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib] ==> dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib]
+          arg [-L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64] ==> dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o] ==> obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o]
+          arg [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crtn.o] ==> obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crtn.o]
+        ignore line: [collect2 version 7.3.0]
+        ignore line: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/ld -plugin /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../libexec/gcc/aarch64-target-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccX7Wyks.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot --eh-frame-hdr -dynamic-linker /lib64/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_bf578 /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crt1.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crti.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64 -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib -L/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64 -v CMakeFiles/cmTC_bf578.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crtn.o]
+        linker tool for 'CXX': /home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/ld
+        collapse obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crt1.o] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64/crt1.o]
+        collapse obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crti.o] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64/crti.o]
+        collapse obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o]
+        collapse obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o]
+        collapse obj [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64/crtn.o] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64/crtn.o]
+        collapse library dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0]
+        collapse library dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc]
+        collapse library dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib/../lib64] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/lib64]
+        collapse library dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64/../lib64] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64]
+        collapse library dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/lib] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/lib]
+        collapse library dir [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../sysroot/usr/lib64] ==> [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64/crt1.o;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64/crti.o;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtbegin.o;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/crtend.o;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64/crtn.o]
+        implicit dirs: [/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/lib64;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64;/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Running the CXX compiler's linker: "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/../lib64/gcc/aarch64-target-linux-gnu/7.3.0/../../../../aarch64-target-linux-gnu/bin/ld" "-v"
+      GNU ld (Do-Compiler V100R001C15B001) 2.38
+...

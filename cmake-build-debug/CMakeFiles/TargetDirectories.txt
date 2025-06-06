@@ -1,0 +1,7 @@
+/home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/main_ocr.dir
+/home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/install.dir
+/home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/install/local.dir
+/home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug/CMakeFiles/install/strip.dir

@@ -1,0 +1,110 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/include",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/include",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/lib64",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"gcc",
+						"gcc_s",
+						"c",
+						"gcc",
+						"gcc_s"
+					]
+				},
+				"path" : "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-gcc",
+				"version" : "7.3.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/include/c++/7.3.0",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/include/c++/7.3.0/aarch64-target-linux-gnu",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/include/c++/7.3.0/backward",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/include",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0/include-fixed",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/include",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc/aarch64-target-linux-gnu/7.3.0",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/lib64/gcc",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/lib64",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/sysroot/usr/lib64",
+						"/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/aarch64-target-linux-gnu/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++",
+						"m",
+						"gcc_s",
+						"gcc",
+						"c",
+						"gcc_s",
+						"gcc"
+					]
+				},
+				"path" : "/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-g++",
+				"version" : "7.3.0"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm",
+				"ccm",
+				"cxxm",
+				"c++m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

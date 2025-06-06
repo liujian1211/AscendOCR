@@ -1,0 +1,7 @@
+/home/chenqiang/software/clion-2024.2.3/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/chenqiang/software/clion-2024.2.3/bin/ninja/linux/x64/ninja -DCMAKE_C_COMPILER=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-gcc -DCMAKE_CXX_COMPILER=/home/chenqiang/project/liujian/orangePi/tool/cross_compile/toolchain/bin/aarch64-target-linux-gnu-g++ -G Ninja -S /home/chenqiang/project/liujian/orangePi/ocr/OCR -B /home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug
+-- set default INC_PATH: /home/chenqiang/Ascend/ascend-toolkit/latest
+-- set default LIB_PATH: /home/chenqiang/Ascend/ascend-toolkit/latest/runtime/lib64/stub
+-- set default THIRDPART: /home/chenqiang/Ascend/ascend-toolkit/latest/thirdpart
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/chenqiang/project/liujian/orangePi/ocr/OCR/cmake-build-debug
