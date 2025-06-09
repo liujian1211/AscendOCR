@@ -332,6 +332,65 @@ cv::Mat AscendOCR::CropBorders(const cv::Mat& image, float top_bottom_ratio, flo
     return result;
 }
 
+void AscendOCR::DetectRedArrows(std::string image_path) {
+
+    cv::Mat image = cv::imread(image_path, cv::IMREAD_COLOR);
+    if (image.empty()) {
+        std::cerr << "Error: Could not open or find the image." << std::endl;
+    }
+
+    // 转换为灰度图
+    cv::Mat gray;
+    cv::cvtColor(image, gray, cv::COLOR_BGR2GRAY);
+
+    // OTSU 二值化 + 反色
+    cv::Mat binary;
+    cv::threshold(gray, binary, 0, 255, cv::THRESH_BINARY_INV | cv::THRESH_OTSU);
+
+    // 创建水平方向的矩形核（用于检测横线）
+    cv::Mat horizontal_kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(40, 1));
+
+    // 形态学开操作，提取横线
+    cv::Mat detected_lines;
+    cv::morphologyEx(binary, detected_lines, cv::MORPH_OPEN, horizontal_kernel, cv::Point(-1, -1), 2);
+
+    // 查找轮廓
+    std::vector<std::vector<cv::Point>> contours;
+    cv::findContours(detected_lines, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+
+    // 遍历所有轮廓，并在原图上用白色填充它们（去除横线）
+    for (const auto& contour : contours) {
+        cv::Rect rect = cv::boundingRect(contour);
+        cv::rectangle(image, rect, cv::Scalar(255, 255, 255), cv::FILLED); // 白色填充
+    }
+
+    // 保存结果图像
+    cv::imwrite("/home/HwHiAiUser/ocr/debug/circle.jpg", image);
+
+    std::cout << "Lines removed and saved to output image." << std::endl;
+
+}
+
+int AscendOCR::DetectWaterline(const cv::Mat& image) {
+    cv::Mat gray, edges;
+    cv::cvtColor(image, gray, cv::COLOR_BGR2GRAY);
+    cv::GaussianBlur(gray, gray, cv::Size(5,5), 0);
+    cv::Canny(gray, edges, 50, 150);
+
+    int h = image.rows;
+    int best_y = h - 1;
+    int max_count = 0;
+    // 只检测下半部分
+    for (int y = h/2; y < h; ++y) {
+        int count = cv::countNonZero(edges.row(y));
+        if (count > max_count) {
+            max_count = count;
+            best_y = y;
+        }
+    }
+    return best_y;
+}
+
 void AscendOCR::EnhanceWaterScaleImage(cv::Mat& image) {
     if (image.empty()) return;
 
@@ -618,6 +677,31 @@ void AscendOCR::PostprocessDet(float* output_data, size_t output_size) {
 
         OrderPointsClockwise(final_box);
 
+//        if (!final_box.empty() && final_box.size() == 4) {
+//            // 1. 计算矩形宽度
+//            float width = norm(final_box[1] - final_box[0]);
+//
+//            // 2. 仅向右延长1/3宽度
+//            float extension_length = width * 0.333f;
+//
+//            // 3. 计算水平延长方向向量（单位向量）
+//            Point2f direction = (final_box[1] - final_box[0]) / width;
+//
+//            // 4. 仅修改右侧端点（索引1和2）
+//            vector<Point2f> extended_box = final_box;
+//            extended_box[1] += direction * extension_length;  // 右上角点向右延伸
+//            extended_box[2] += direction * extension_length;  // 右下角点向右延伸
+//
+//            // 5. 边界保护（防止超出图像右边界）
+//            float max_x = src_image_.cols - 1;
+//            extended_box[1].x = min(extended_box[1].x, max_x);
+//            extended_box[2].x = min(extended_box[2].x, max_x);
+//
+//            final_box = extended_box;
+//        }
+//        // 将框坐标转换回原始图像空间
+//        original_box = TransformBoxToOriginal(final_box);
+
         // 添加到结果
         dt_boxes_.push_back(original_box);
     }
@@ -832,8 +916,8 @@ void AscendOCR::VisualizeResults(const string& output_path) {
     }
 
     // 保存结果
-//    imwrite(output_path, result_image);
-//    INFO_LOG("Visualization saved to: %s", output_path.c_str());
+    imwrite(output_path, result_image);
+    INFO_LOG("Visualization saved to: %s", output_path.c_str());
 }
 
 void AscendOCR::ReleaseResource() {
@@ -931,6 +1015,10 @@ int main(int argc, char* argv[]) {
 
     // 可视化结果（包含检测框和识别文本）
     ocr.VisualizeResults(output_path);
+
+    //后处理:1）识别水尺线；2）水尺线与识别文本对应；3）根据比率做相减得到最终结果
+    ocr.DetectRedArrows(image_path);
+
 
     return SUCCESS;
 }

@@ -57,9 +57,13 @@ link_directories(
 
 add_executable(main_ocr
 #        sampleResnetQuickStart.cpp
-        AscendOCR.cpp
-        Ascend_rec.cpp
-        AscendOCR.h
+
+#        AscendOCR.cpp
+#        Ascend_rec.cpp
+#        AscendOCR.h
+
+
+        mark.cpp
         #AscendOCR_det.cpp
 )
 

@@ -32,7 +32,6 @@ public:
     // 存储序列长度
     int rec_num_classes_;
 
-
     //检查抠出来的图是不是水尺部分
     bool IsWaterScaleCroppedImage(const cv::Mat& image);
 
@@ -41,6 +40,12 @@ public:
 
     //增强对比度，提高精度
     void EnhanceWaterScaleImage(cv::Mat& image);
+
+    //检测红色箭头底部中心点
+    void DetectRedArrows(std::string image_path);
+
+    //简单实现水位线检测，实际换为你们的
+    int DetectWaterline(const cv::Mat& image);
 
 private:
     void ReleaseResource();
