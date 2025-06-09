@@ -133,7 +133,7 @@ for (x1, y1), (x2, y2) in horizontal_lines:
     cv2.line(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
 
 
-#绘制一条水位线（这里可以替代为你们的水位线检测代码）
+#绘制一条水位线（这里替代为你们的水位线检测代码）
 x1, y1 = horizontal_lines[-1][0]
 x2, y2 = horizontal_lines[-1][1]
 
